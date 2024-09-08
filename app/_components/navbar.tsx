@@ -7,7 +7,7 @@ import { CircleUserRound, Compass, Heart, LogOut, Minus, Search, ShoppingBasket 
 export default function Navbar() {
     return (
         <>
-            <div className='w-[100%] lg:h-[90px] h-fit md:h-fit bg-[#111827] flex items-center justify-around fixed flex-wrap'>
+            <div className='w-[100%] lg:h-[80px] h-fit md:h-fit bg-[#111827] flex items-center justify-around fixed flex-wrap inset-0 m-0 z-30'>
                 {/* <div className='bg-[red] absolute left-0'><Image src={logo} className='lg:w-[120px] lg:h-[120px]' alt='' /></div> */}
                 <div className='relative'>
                     <input type="text" className='w-[20em] py-[8px] rounded-lg bg-[#374151] outline-none pl-10 text-white' />
