@@ -5,8 +5,8 @@ export default function Home() {
     return (
         <>
             <div className='mx-[40px]'>
-                <div className='h-fit mt-[150px] max-w-2xl '>
-                    <div className='text-6xl font-bold tracking-tight text-gray-100'>
+                <div className='h-fit mt-[150px] max-w-xl '>
+                    <div className='text-6xl font-extrabold tracking-tight text-gray-100'>
                         <div className='text-xl tracking-wide'>WELCOME</div>
                         <span className='text-transparent bg-clip-text bg-gradient-to-tr from-[#ff4694] to-[#776fff]'>MELODICA</span>
                     </div>

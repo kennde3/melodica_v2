@@ -2,6 +2,7 @@ import React from 'react'
 // import logo from '@/public/4.png'
 // import Image from 'next/image'
 import { CircleUserRound, Compass, Heart, LogOut, Minus, Search, ShoppingBasket } from 'lucide-react'
+import Link from 'next/link'
 
 
 export default function Navbar() {
@@ -14,9 +15,9 @@ export default function Navbar() {
                     <Search className='absolute top-2 left-2 text-[#969ba3]' />
                 </div>
                 <div className='flex gap-5 items-center my-2 lg:my-0'>
-                    <div className='lg:flex text-white font-medium text-lg items-center gap-2 py-2 px-4 hover:bg-[#374151] rounded-lg cursor-pointer'>
+                    <Link href={"/ExploreMore"} className='lg:flex text-white font-medium text-lg items-center gap-2 py-2 px-4 hover:bg-[#374151] rounded-lg cursor-pointer'>
                         <div className='hidden lg:block md:hidden'>Explore</div> <Compass />
-                    </div>
+                    </Link>
 
                     <div className='lg:flex items-center text-[#374151] rotate-90 hidden'><Minus /></div>
 
