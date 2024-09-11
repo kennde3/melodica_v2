@@ -27,7 +27,7 @@ export default function DrawerButton() {
             <Drawer
                 closable
                 destroyOnClose
-                title={<p>Loading Drawer</p>}
+                title={<p></p>}
                 placement="right"
                 open={open}
                 loading={loading}
