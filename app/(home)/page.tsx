@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import React from 'react'
 import background from "@/public/boksbg.png"
-import Home from './_components/home'
-import FrontCategory from './_components/frontCategory'
+import Home from '../_components/home'
+import FrontCategory from '../_components/frontCategory'
 
 
 export default function Page() {

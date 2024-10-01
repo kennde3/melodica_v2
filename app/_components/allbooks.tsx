@@ -27,7 +27,7 @@ export default function Allbooks() {
                         </div>
                     </div>
                     <div className='mt-3 text-white text-lg sm:text-xl lg:text-2xl font-bold'>{book.title}</div>
-                    <div className='text-white text-2xl sm:text-3xl font-extrabold mt-3 sm:mt-5'>${book.price}</div>
+                    <div className='text-white text-2xl sm:text-3xl font-extrabold mt-3 sm:mt-5'>{book.price} RWF</div>
                     <div className='flex justify-between text-white mt-2'>
                         <div className='line-through'>${book.originalPrice}</div>
                         <div className='flex'>

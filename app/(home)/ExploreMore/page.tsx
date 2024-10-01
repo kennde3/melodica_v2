@@ -1,6 +1,6 @@
 import React from 'react'
-import DrawerButton from '../_components/drawerButton'
-import Allbooks from '../_components/allbooks'
+import DrawerButton from '../../_components/drawerButton'
+import Allbooks from '../../_components/allbooks'
 
 export default function ExploreMore() {
     return (

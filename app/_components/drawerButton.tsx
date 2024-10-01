@@ -13,7 +13,6 @@ export default function DrawerButton() {
         setOpen(true);
         setLoading(true);
 
-        // Simple loading mock. You should add cleanup logic in real world.
         setTimeout(() => {
             setLoading(false);
         }, 2000);
@@ -36,15 +35,42 @@ export default function DrawerButton() {
                 <p>Price (0 to 100)</p>
                 <SliderApp />
                 <hr />
-                <p className='mt-5'>Price</p>
+                <p className='mt-5 text-lg font-medium mb-2'>Price</p>
                 <RadioType />
                 <hr />
-                <p className='mt-5 mb-2'>Rating</p>
+                <p className='mt-5 text-lg font-medium mb-2'>Rating</p>
                 <Rate />;
                 <hr />
-                <p>Category</p>
-                <form action="">
-                    <input type="checkbox" name="" id="" />
+                <p className='mt-5 text-lg font-medium mb-2'>Category</p>
+                <form action="" className='flex flex-col gap-2'>
+                    <div>
+                        <input type="checkbox" name="" id="" className='pl-2' />
+                        <label className='ml-2'>Fantasy</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id="" className='pl-2' />
+                        <label className='ml-2'>Drama</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id="" className='pl-2' />
+                        <label className='ml-2'>Biography</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id="" className='pl-2' />
+                        <label className='ml-2'>Non-Fiction</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id="" className='pl-2' />
+                        <label className='ml-2'>Horror</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id="" className='pl-2' />
+                        <label className='ml-2'>Fiction</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id="" className='pl-2' />
+                        <label className='ml-2'>Thriller</label>
+                    </div>
                 </form>
 
             </Drawer>

@@ -1,7 +1,7 @@
 import React from 'react'
 // import logo from '@/public/4.png'
 // import Image from 'next/image'
-import { CircleUserRound, Compass, Heart, LogOut, Minus, Search, ShoppingBasket } from 'lucide-react'
+import { CircleUserRound, Compass, Heart, LogIn, Minus, Search, ShoppingBasket } from 'lucide-react'
 import Link from 'next/link'
 
 
@@ -26,22 +26,21 @@ export default function Navbar() {
                     </div>
 
                     <div className='lg:flex items-center text-[#374151] rotate-90 hidden'><Minus /></div>
-
-                    <div className='flex text-white text-lg items-center gap-2 cursor-pointer'>
+                    <Link href={"/CheckOut"} className='flex text-white text-lg items-center gap-2 cursor-pointer' >
                         <ShoppingBasket /> 0
-                    </div>
+                    </Link>
 
                     <div className='lg:flex items-center text-[#374151] rotate-90 hidden'><Minus /></div>
 
-                    <div className='flex text-white text-lg items-center gap-2 cursor-pointer'>
+                    <Link className='flex text-white text-lg items-center gap-2 cursor-pointer' href={'/users'}>
                         <CircleUserRound />
-                    </div>
+                    </Link>
 
                     <div className='lg:flex items-center text-[#374151] rotate-90 hidden'><Minus /></div>
 
-                    <div className=' lg:flex text-white font-medium text-lg items-center gap-2 py-2 px-4 hover:bg-[#374151] rounded-lg cursor-pointer'>
-                        <div className='hidden lg:block md:hidden'>Log Out</div> <LogOut />
-                    </div>
+                    <Link className=' lg:flex text-white font-medium text-lg items-center gap-2 py-2 px-4 hover:bg-[#374151] rounded-lg cursor-pointer' href={'/LoginPage'}>
+                        <div className='hidden lg:block md:hidden'>Log In</div> <LogIn />
+                    </Link>
                 </div>
             </div>
         </>
