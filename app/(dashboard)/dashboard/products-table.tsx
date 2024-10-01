@@ -16,17 +16,14 @@ import {
   CardTitle
 } from '@/components/ui/card';
 import { Product } from './product';
-import { SelectProduct } from '@/lib/db';
 import { useRouter } from 'next/navigation';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export function ProductsTable({
-  products,
   offset,
   totalProducts
 }: {
-  products: SelectProduct[];
   offset: number;
   totalProducts: number;
 }) {
@@ -69,9 +66,8 @@ export function ProductsTable({
             </TableRow>
           </TableHeader>
           <TableBody>
-            {products.map((product) => (
-              <Product key={product.id} product={product} />
-            ))}
+            <Product />
+
           </TableBody>
         </Table>
       </CardContent>

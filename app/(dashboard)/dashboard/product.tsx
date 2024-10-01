@@ -10,9 +10,8 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { MoreHorizontal } from 'lucide-react';
 import { TableCell, TableRow } from '@/components/ui/table';
-import { SelectProduct } from '@/lib/db';
 
-export function Product({ product }: { product: SelectProduct }) {
+export function Product() {
   return (
     <TableRow>
       <TableCell className="hidden sm:table-cell">
@@ -20,20 +19,20 @@ export function Product({ product }: { product: SelectProduct }) {
           alt="Product image"
           className="aspect-square rounded-md object-cover"
           height="64"
-          src={product.imageUrl}
+          src={""}
           width="64"
         />
       </TableCell>
-      <TableCell className="font-medium">{product.name}</TableCell>
+      <TableCell className="font-medium">Book Example</TableCell>
       <TableCell>
         <Badge variant="outline" className="capitalize">
-          {product.status}
+          Active
         </Badge>
       </TableCell>
-      <TableCell className="hidden md:table-cell">{`$${product.price}`}</TableCell>
-      <TableCell className="hidden md:table-cell">{product.stock}</TableCell>
+      <TableCell className="hidden md:table-cell">350 FRW</TableCell>
+      <TableCell className="hidden md:table-cell">5</TableCell>
       <TableCell className="hidden md:table-cell">
-        {product.availableAt.toLocaleDateString("en-US")}
+        12.06.2024
       </TableCell>
       <TableCell>
         <DropdownMenu>

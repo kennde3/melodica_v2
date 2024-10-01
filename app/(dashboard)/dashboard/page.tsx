@@ -13,7 +13,6 @@ export default async function ProductsPage({
   //   Number(offset)
   // );
 
-  const products: { id: number; name: string; imageUrl: string; status: "active" | "inactive" | "archived"; price: string; stock: number; availableAt: Date; }[] = [];
 
   const newOffset = 1;
   const totalProducts = 30;
@@ -38,7 +37,6 @@ export default async function ProductsPage({
       </div>
       <TabsContent value="all">
         <ProductsTable
-          products={products}
           offset={newOffset ?? 0}
           totalProducts={totalProducts}
         />
