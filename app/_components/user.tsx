@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { UserRoundPen } from "lucide-react";
 import { useParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
@@ -21,7 +21,8 @@ export default function Users() {
         setIsPopupOpen(!isPopupOpen); // Toggle popup
     };
 
-    const handleInputChange = (e) => {
+    // Define types for the event parameter
+    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
         setUserDetails((prevDetails) => ({
             ...prevDetails,
@@ -29,7 +30,7 @@ export default function Users() {
         }));
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         // Handle form submission logic, e.g., sending data to the server
         console.log("Updated User Details:", userDetails);
